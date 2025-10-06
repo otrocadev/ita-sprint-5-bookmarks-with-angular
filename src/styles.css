@@ -52,3 +52,12 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 2rem;
+}

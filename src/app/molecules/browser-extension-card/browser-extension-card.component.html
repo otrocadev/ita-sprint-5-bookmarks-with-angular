@@ -1,0 +1,16 @@
+<article class="extension-card">
+  <div>
+    <img src="img/logo-{{ navigator }}.svg" alt="chrome logo" />
+    <h3>Add to {{ navigator.charAt(0).toUpperCase() + navigator.slice(1) }}</h3>
+    <span>Minimum version {{ version }}</span>
+  </div>
+  <img src="img/bg-dots.svg" alt="A dotted pattern for separating purposes" />
+  <a
+    href="{{ url }}"
+    rel="noopener noreferrer"
+    target="_blank"
+    class="button-container"
+  >
+    <app-button>Add & install extension</app-button>
+  </a>
+</article>
