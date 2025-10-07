@@ -4,6 +4,7 @@ import { FeaturesComponent } from './sections/features/features.component';
 import { DownloadExtensionComponent } from './sections/download-extension/download-extension.component';
 import { FaqsComponent } from './sections/faqs/faqs.component';
 import { HeaderComponent } from './sections/header/header.component';
+import { FooterComponent } from './sections/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { HeaderComponent } from './sections/header/header.component';
     DownloadExtensionComponent,
     FaqsComponent,
     HeaderComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
