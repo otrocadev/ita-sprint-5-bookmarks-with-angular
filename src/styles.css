@@ -5,6 +5,8 @@
   --text-primary-color: #010101;
   --text-secondary-color: #f7f7f7;
   --text-terciary-color: #98a1ae;
+  --bg-color: #fff;
+  --error-color: #f95959;
 }
 
 @font-face {
@@ -51,4 +53,13 @@ h1 {
 
 h2 {
   font-size: 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 2rem;
 }
