@@ -1,0 +1,18 @@
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--bg-color);
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 2rem;
+  max-width: 1024px;
+  margin: auto;
+
+  @media only screen and (min-width: 720px) {
+    #bgr-logo {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+#extension-browsers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  #extension-browsers {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  #extension-browsers app-browser-extension-card:nth-child(2) {
+    margin-top: 2rem;
+  }
+
+  #extension-browsers app-browser-extension-card:last-child {
+    margin-top: 4rem;
+  }
+}
