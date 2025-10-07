@@ -1,0 +1,20 @@
+.page-links {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+
+  @media screen and (min-width: 720px) {
+    flex-direction: row;
+    margin: 0 2rem;
+  }
+}
+
+a {
+  color: var(--text-primary-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.is-dark {
+  color: var(--text-secondary-color);
+}
