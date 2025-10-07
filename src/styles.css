@@ -5,6 +5,7 @@
   --text-primary-color: #010101;
   --text-secondary-color: #f7f7f7;
   --text-terciary-color: #98a1ae;
+  --bg-color: #fff;
 }
 
 @font-face {
@@ -29,6 +30,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   text-wrap: pretty;
+  max-width: 1024px;
+  margin: auto;
 }
 
 img,
