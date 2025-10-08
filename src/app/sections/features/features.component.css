@@ -37,23 +37,3 @@ nav {
     }
   }
 }
-
-.simple-bookmarking {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  @media only screen and (min-width: 720px) {
-    flex-direction: row;
-  }
-}
-
-.feature-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-  padding: 2rem;
-}

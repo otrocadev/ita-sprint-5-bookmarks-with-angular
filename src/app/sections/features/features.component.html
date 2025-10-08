@@ -6,29 +6,53 @@
     the go.
   </span>
   <nav id="features-nav">
-    <div id="simple-bookmatking-btn" class="menu-element">
+    <div
+      (click)="selectedFeature = 'simple-bookmarking'"
+      id="simple-bookmatking-btn"
+      class="menu-element"
+    >
       <span class="selected">Simple Bookmarking</span>
     </div>
-    <div id="speedy-searching-btn" class="menu-element">
+    <div
+      (click)="selectedFeature = 'speedy-searching'"
+      id="speedy-searching-btn"
+      class="menu-element"
+    >
       <span> Speedy Searching </span>
     </div>
-    <div id="easy-sharing-btn" class="menu-element">
+    <div
+      (click)="selectedFeature = 'easy-sharing'"
+      id="easy-sharing-btn"
+      class="menu-element"
+    >
       <span> Easy Sharing </span>
     </div>
   </nav>
   <div id="features-list">
-    <!-- This will be a component that changes dinamically -->
-    <article class="simple-bookmarking">
-      <img src="img/illustration-features-tab-1.svg" alt="" />
-      <div class="feature-text">
-        <h3>Bookmark in one click</h3>
-        <span>
-          Organize your bookmarks however you like. Our simple drag-and-drop
-          interface gives you complete control over how you manage your
-          favourite sites.
-        </span>
-        <app-button>More Info</app-button>
-      </div>
-    </article>
+    @if(selectedFeature === 'simple-bookmarking'){
+    <app-feature-article
+      title="Bookmark in one click"
+      description="Organize your bookmarks however you like. Our simple drag-and-drop
+      interface gives you complete control over how you manage your favourite
+      sites."
+      image="illustration-features-tab-1.svg"
+    ></app-feature-article>
+
+    } @if(selectedFeature === 'speedy-searching'){
+    <app-feature-article
+      title="Intelligent search"
+      description="Our advanced search technology finds saved sites in real-time.
+      Don't even have to leave the page!"
+      image="illustration-features-tab-2.svg"
+    ></app-feature-article>
+
+    } @if(selectedFeature === 'easy-sharing'){
+    <app-feature-article
+      title="Share your bookmarks"
+      description="Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button."
+      image="illustration-features-tab-3.svg"
+    ></app-feature-article>
+
+    }
   </div>
 </section>

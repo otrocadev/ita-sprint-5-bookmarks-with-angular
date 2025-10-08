@@ -1,0 +1,23 @@
+.bookmarking-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (min-width: 720px) {
+    flex-direction: row;
+
+    img {
+      max-width: 45%;
+    }
+  }
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem;
+}

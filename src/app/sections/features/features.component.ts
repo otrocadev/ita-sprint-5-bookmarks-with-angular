@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from '../../atoms/button/button.component';
+import { FeatureArticleComponent } from '../../molecules/feature-article/feature-article.component';
 
 @Component({
   selector: 'app-features',
-  imports: [ButtonComponent],
+  imports: [FeatureArticleComponent],
   templateUrl: './features.component.html',
   styleUrl: './features.component.css',
 })
-export class FeaturesComponent {}
+export class FeaturesComponent {
+  selectedFeature = 'simple-bookmarking';
+}
