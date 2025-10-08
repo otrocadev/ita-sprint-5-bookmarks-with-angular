@@ -1,0 +1,30 @@
+@if(!isMenuOpen){
+<button id="bgr-logo" (click)="isMenuOpen = !isMenuOpen">
+  <img src="img/icon-hamburger.svg" alt="icon" />
+</button>
+} @else {
+<div id="mobile-menu">
+  <nav>
+    <div id="hero-mobile-menu">
+      <a href="#"><img src="img/logo-bookmark-white.svg" alt="" /></a>
+      <button id="close-menu-btn" (click)="isMenuOpen = !isMenuOpen">
+        <img src="img/icon-close.svg" alt="" />
+      </button>
+    </div>
+    <a class="mobile-menu-link" href="#">FEATURES</a>
+    <a class="mobile-menu-link" href="#">PRICING</a>
+    <a class="mobile-menu-link" href="#">CONTACT</a>
+    <a class="mobile-menu-link" href="#">
+      <button id="login-btn-mobile">LOGIN</button>
+    </a>
+  </nav>
+  <div class="social-links">
+    <a href="https://www.facebook.com"
+      ><img src="img/icon-facebook.svg" alt="facebook icnon"
+    /></a>
+    <a href="https://x.com"
+      ><img src="img/icon-twitter.svg" alt="x (twitter) icon"
+    /></a>
+  </div>
+</div>
+}

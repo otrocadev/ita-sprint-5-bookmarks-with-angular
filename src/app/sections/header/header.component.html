@@ -2,28 +2,9 @@
   <a id="main-logo" href="#">
     <img src="img/logo-bookmark.svg" alt="Bookmark logo for the header" />
   </a>
+  @if(isDesktop){
   <app-desktop-menu></app-desktop-menu>
-  <!-- <img id="bgr-logo" src="./assets/img/icon-hamburger.svg" alt="icon" /> -->
-  <!-- <div id="mobile-menu">
-    <nav>
-      <div id="hero-mobile-menu">
-        <a href="#"
-          ><img src="./assets/img/logo-bookmark-white.svg" alt=""
-        /></a>
-        <button>
-          <img id="close-menu-btn" src="./assets/img/icon-close.svg" alt="" />
-        </button>
-      </div>
-      <a href="#">FEATURES</a>
-      <a href="#">PRICING</a>
-      <a href="#">CONTACT</a>
-      <a href="#">
-        <span id="login-btn-mobile"> LOGIN </span>
-      </a>
-    </nav>
-    <div id="social">
-      <a href="#"><img src="./assets/img/icon-facebook.svg" alt="" /></a>
-      <a href="#"><img src="./assets/img/icon-twitter.svg" alt="" /></a>
-    </div>
-  </div> -->
+  } @else {
+  <app-mobile-menu></app-mobile-menu>
+  }
 </header>
