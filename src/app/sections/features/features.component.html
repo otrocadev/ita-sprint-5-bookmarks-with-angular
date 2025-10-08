@@ -11,21 +11,27 @@
       id="simple-bookmatking-btn"
       class="menu-element"
     >
-      <span class="selected">Simple Bookmarking</span>
+      <span [class.selected]="selectedFeature === 'simple-bookmarking'"
+        >Simple Bookmarking</span
+      >
     </div>
     <div
       (click)="selectedFeature = 'speedy-searching'"
       id="speedy-searching-btn"
       class="menu-element"
     >
-      <span> Speedy Searching </span>
+      <span [class.selected]="selectedFeature === 'speedy-searching'"
+        >Speedy Searching</span
+      >
     </div>
     <div
       (click)="selectedFeature = 'easy-sharing'"
       id="easy-sharing-btn"
       class="menu-element"
     >
-      <span> Easy Sharing </span>
+      <span [class.selected]="selectedFeature === 'easy-sharing'"
+        >Easy Sharing</span
+      >
     </div>
   </nav>
   <div id="features-list">
