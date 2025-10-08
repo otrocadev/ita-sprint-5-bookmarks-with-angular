@@ -8,9 +8,8 @@ describe('MobileMenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MobileMenuComponent]
-    })
-    .compileComponents();
+      imports: [MobileMenuComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(MobileMenuComponent);
     component = fixture.componentInstance;
@@ -19,5 +18,19 @@ describe('MobileMenuComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render burger buttonwhen the menu is closed', () => {
+    const burgerButton =
+      fixture.debugElement.nativeElement.querySelector('#bgr-logo');
+    expect(burgerButton).toBeTruthy();
+  });
+
+  it('should render mobile menu when the menu is open', () => {
+    component.isMenuOpen = true;
+    fixture.detectChanges();
+    const mobileMenu =
+      fixture.debugElement.nativeElement.querySelector('#mobile-menu');
+    expect(mobileMenu).toBeTruthy();
   });
 });

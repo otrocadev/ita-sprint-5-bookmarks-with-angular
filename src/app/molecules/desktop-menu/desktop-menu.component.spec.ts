@@ -8,9 +8,8 @@ describe('DesktopMenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DesktopMenuComponent]
-    })
-    .compileComponents();
+      imports: [DesktopMenuComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(DesktopMenuComponent);
     component = fixture.componentInstance;
@@ -19,5 +18,14 @@ describe('DesktopMenuComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render menu links and login button', () => {
+    const menuLinks =
+      fixture.debugElement.nativeElement.querySelectorAll('.page-links');
+    expect(menuLinks).toBeTruthy();
+    const loginButton =
+      fixture.debugElement.nativeElement.querySelector('#login-btn');
+    expect(loginButton).toBeTruthy();
   });
 });
