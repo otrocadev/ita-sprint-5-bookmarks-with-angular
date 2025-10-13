@@ -5,16 +5,12 @@
     a favorite you'd like us to prioritize.
   </span>
   <div id="extension-browsers">
-    <app-browser-extension-card></app-browser-extension-card>
+    @for( browser of browserData; track browser.navigator){
     <app-browser-extension-card
-      navigator="firefox"
-      version="55"
-      url="https://www.firefox.com"
+      navigator="{{ browser.navigator }}"
+      version="{{ browser.version }}"
+      url="{{ browser.url }}"
     ></app-browser-extension-card>
-    <app-browser-extension-card
-      navigator="opera"
-      version="46"
-      url="https://www.opera.com/"
-    ></app-browser-extension-card>
+    }
   </div>
 </section>

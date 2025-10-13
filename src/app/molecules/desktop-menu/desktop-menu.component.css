@@ -4,10 +4,6 @@
   justify-content: center;
   gap: 2rem;
 
-  @media only screen and (max-width: 720px) {
-    display: none;
-  }
-
   a {
     text-decoration: none;
     color: var(--text-primary-color);

@@ -6,29 +6,26 @@
     the go.
   </span>
   <nav id="features-nav">
-    <div id="simple-bookmatking-btn" class="menu-element">
-      <span class="selected">Simple Bookmarking</span>
+    @for(feature of featuresData; track feature.title){
+    <div
+      (click)="selectedFeature = feature.selector"
+      id="{{ feature.selector }}-btn"
+      class="menu-element"
+    >
+      <span [class.selected]="selectedFeature === feature.selector">{{
+        feature.title
+      }}</span>
     </div>
-    <div id="speedy-searching-btn" class="menu-element">
-      <span> Speedy Searching </span>
-    </div>
-    <div id="easy-sharing-btn" class="menu-element">
-      <span> Easy Sharing </span>
-    </div>
+    }
   </nav>
   <div id="features-list">
-    <!-- This will be a component that changes dinamically -->
-    <article class="simple-bookmarking">
-      <img src="img/illustration-features-tab-1.svg" alt="" />
-      <div class="feature-text">
-        <h3>Bookmark in one click</h3>
-        <span>
-          Organize your bookmarks however you like. Our simple drag-and-drop
-          interface gives you complete control over how you manage your
-          favourite sites.
-        </span>
-        <app-button>More Info</app-button>
-      </div>
-    </article>
+    @for(feature of featuresData; track feature.title){ @if(selectedFeature ===
+    feature.selector){
+    <app-feature-article
+      title="{{ feature.title }}"
+      description="{{ feature.description }}"
+      image="{{ feature.image }}"
+    ></app-feature-article>
+    } }
   </div>
 </section>
