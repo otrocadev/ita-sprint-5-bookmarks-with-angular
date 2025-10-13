@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BrowserExtensionCardComponent } from '../../molecules/browser-extension-card/browser-extension-card.component';
+import { browserData } from '../../data/browserData';
 
 @Component({
   selector: 'app-download-extension',
@@ -7,4 +8,6 @@ import { BrowserExtensionCardComponent } from '../../molecules/browser-extension
   templateUrl: './download-extension.component.html',
   styleUrl: './download-extension.component.css',
 })
-export class DownloadExtensionComponent {}
+export class DownloadExtensionComponent {
+  browserData = browserData;
+}
