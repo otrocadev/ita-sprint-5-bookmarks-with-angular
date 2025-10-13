@@ -18,6 +18,18 @@ https://github.com/user-attachments/assets/88433d87-fc2b-4b3b-ac3d-e7fdcb1da18e
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="14" alt="TypeScript Logo"/> TypeScript
 
 ## 🛠️ Angular commands
+### Download the repo
+
+```bash
+git clone https://github.com/otrocadev/ita-sprint-5-bookmarks-with-angular.git
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
 ### Development server
 To start a local development server, run:
 
@@ -26,20 +38,6 @@ ng serve
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-### Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
 
 ### Building
 
