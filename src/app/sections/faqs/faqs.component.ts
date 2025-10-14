@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ButtonComponent } from '../../atoms/button/button.component';
 import { FaqsQuestionComponent } from '../../molecules/faqs-question/faqs-question.component';
+import { faqsData } from '../../data/faqsData';
 
 @Component({
   selector: 'app-faqs',
@@ -8,4 +9,6 @@ import { FaqsQuestionComponent } from '../../molecules/faqs-question/faqs-questi
   templateUrl: './faqs.component.html',
   styleUrl: './faqs.component.css',
 })
-export class FaqsComponent {}
+export class FaqsComponent {
+  faqsData = faqsData;
+}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FeatureArticleComponent } from '../../molecules/feature-article/feature-article.component';
+import { featuresData } from '../../data/featuresData';
 
 @Component({
   selector: 'app-features',
@@ -9,4 +10,5 @@ import { FeatureArticleComponent } from '../../molecules/feature-article/feature
 })
 export class FeaturesComponent {
   selectedFeature = 'simple-bookmarking';
+  featuresData = featuresData;
 }

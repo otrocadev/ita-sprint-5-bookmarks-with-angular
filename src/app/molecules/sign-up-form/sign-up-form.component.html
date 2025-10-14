@@ -1,0 +1,25 @@
+<section id="contact">
+  <span> 35,000+ ALREADY JOINED </span>
+  <h3>Stay up-tp-date with what we're doing</h3>
+  <form (submit)="manageSubmit()">
+    <div id="email-input" [ngClass]="errorStatus ? 'email-error' : ''">
+      <div id="email-container">
+        <input
+          type="text"
+          name="email"
+          id="email-text-camp"
+          placeholder="Enter your email address"
+          [(ngModel)]="emailInput"
+          required
+        />
+        @if (errorStatus) {
+        <img src="/img/icon-error.svg" alt="error icon" />
+        }
+      </div>
+      @if (errorStatus) {
+      <span> Please enter a valid email address </span>
+      }
+    </div>
+    <input type="submit" value="Contact Us" class="terciary-btn" />
+  </form>
+</section>

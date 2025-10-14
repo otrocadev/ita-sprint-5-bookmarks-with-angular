@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
-import { FooterLinksComponent } from './footer-links/footer-links.component';
+import { SignUpFormComponent } from '../../molecules/sign-up-form/sign-up-form.component';
+import { FooterLinksComponent } from '../../molecules/footer-links/footer-links.component';
 
 @Component({
   selector: 'app-footer',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PageLinksComponent } from '../../../molecules/page-links/page-links.component';
+import { PageLinksComponent } from '../page-links/page-links.component';
 
 @Component({
   selector: 'app-footer-links',

@@ -33,13 +33,51 @@
 
   #email-input {
     border-radius: 0.2rem;
+    border: 0.1rem solid var(--principal-color);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.2rem;
+    padding: 0.4rem;
+    border-radius: 0.6rem;
+
+    #email-text-camp {
+      border-radius: 0.4rem;
+    }
+
+    #email-container {
+      display: flex;
+      gap: 0.2rem;
+      background-color: white;
+      border-radius: 0.4rem;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        padding: 0.2rem;
+      }
+    }
+  }
+
+  .email-error {
+    color: var(--text-secondary-color);
+    border: 0.1rem solid var(--principal-color);
+    background-color: var(--error-color);
+    font-style: italic;
+
+    span {
+      font-size: 0.8rem;
+      letter-spacing: 0;
+    }
   }
 
   input[type="button"],
   input[type="submit"],
   input[type="reset"] {
     display: inline-block;
+    height: 2.5rem;
     font-size: 1rem;
+    margin-top: 0.25rem;
     padding: 0.6rem 1rem;
     border-radius: 0.2rem;
     border: 0;
